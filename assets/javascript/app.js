@@ -1,10 +1,6 @@
 //array of topics (strings)
 var topics = ["beach", "coral", "fire", "forest", "geyser", "lake", "lava", "moon", "mountains", "northern lights", "ocean", "reef", "river", "sunrise", "waterfall"];
 
-//createButtons();
-
-
-//use document on click to grab all buttons, may need to do for images too
 function displayNatureImages() {
 
 	$("#natureImages").empty();
@@ -37,10 +33,8 @@ function displayNatureImages() {
 
 				var displayImage = $("<img class='natureChoice' data-state='still' data-unmoving='" + stillURL + "' data-moving='" + animatedURL + "'>").attr("src", stillURL);
 
-				//var animatedImage = $("<img class='natureChoice' data-state='moving'>").attr("src", animatedURL);
-
 				$("#natureImages").append(displayImage);
-				//$("#natureImages").append(animatedImage);
+
 				$("#natureImages").append(ratingParagraph);
 			}
 		
@@ -60,7 +54,7 @@ function displayNatureImages() {
 		//end of image on click function	
 		})
 	});
-//end of button on click function	
+//end of dislay nature images function	
 }
 
 //function that runs through the array and remakes all the buttons
